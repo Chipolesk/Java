@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ContaBanco/ContaBanco.iml" filepath="$PROJECT_DIR$/ContaBanco/ContaBanco.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Debugging/Debugging.iml" filepath="$PROJECT_DIR$/Debugging/Debugging.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Estrutura-Repeticao/Estrutura-Repeticao.iml" filepath="$PROJECT_DIR$/Estrutura-Repeticao/Estrutura-Repeticao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Excecoes/Excecoes.iml" filepath="$PROJECT_DIR$/Excecoes/Excecoes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Java.iml" filepath="$PROJECT_DIR$/.idea/Java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ProcessoSeletivo/ProcessoSeletivo.iml" filepath="$PROJECT_DIR$/ProcessoSeletivo/ProcessoSeletivo.iml" />
+    </modules>
+  </component>
+</project>
