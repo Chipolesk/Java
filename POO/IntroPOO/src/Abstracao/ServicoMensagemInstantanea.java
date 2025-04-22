@@ -1,0 +1,14 @@
+package Abstracao;
+
+public abstract class ServicoMensagemInstantanea {
+    //METODOS ABSTRATOS SAO DEFINIDOS PELA PALAVRA ABSTRACT E ELES NÃO POSSUEM CORPO "{}",
+    // APENAS SÃO DEFINIDOS E ENCERRADOS PELO ";"
+
+    public abstract void enviarMensagem();
+    public abstract void receberMensagem();
+
+    //O QUE QUER DIZER?
+    //ABSTRATO SIGNIFICA QUE ELA NAO DEFINIRÁ A FORMA COMO IRÃO USAR ESSES MÉTODOS,
+    // APENAS QUE PARA USAR ESTA CLASSE, PRECISA TER ESSES METODOS.
+    //E DENTRO DA CLASSE FILHA QUE DEFINIRÁ A FORMA DE USAR ESSES METODOS
+}
