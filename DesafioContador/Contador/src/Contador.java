@@ -13,7 +13,7 @@ public class Contador {
         }catch (ParametrosInvalidosException exception){
             System.err.println("O segundo parametro deve ser maior que o primeiro");
         }
-
+        scanner.close();
     }
     static void contar(int paramUm, int paramDois) throws ParametrosInvalidosException{
         if (paramUm > paramDois)
