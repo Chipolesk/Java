@@ -12,13 +12,11 @@ public class WelcomeController {
         return "BEM VINDO À MINHA APLICAÇÃO SPRING BOOT WEB API";
     }
     @GetMapping("/users")
-    @PreAuthorize("hasAnyRole('MANAGERS','USERS')")
     public String users(){
         return "AUTHORIZED USER";
     }
 
     @GetMapping("/managers")
-    @PreAuthorize("hasRole('MANAGERS')")
     public String manager(){
         return "AUTHORIZED MANAGER";
     }
