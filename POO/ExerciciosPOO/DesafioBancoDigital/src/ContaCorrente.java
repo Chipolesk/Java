@@ -6,7 +6,7 @@ public class ContaCorrente extends Conta{
 
 
     public void imprimirExtrato() {
-        System.out.println("EXTRATO CORRENTE");
+        System.out.println("===== EXTRATO CORRENTE =====");
         super.imprimirExtratoComum();
 
     }

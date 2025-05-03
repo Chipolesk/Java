@@ -1,7 +1,4 @@
-package OperacoesBasicas.List;
-
-import java.util.ArrayList;
-import java.util.List;
+package List.OperacoesBasicas;
 
 public class Item {
     //atributos

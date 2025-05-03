@@ -1,26 +1,26 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public abstract class Conta implements InterfaceConta {
     private static int AGENCIA_PADRAO = 1;
     private static int NUMERO_CONTADOR = 1;
     private List<Cliente> clienteList = new ArrayList<>();
 
+    protected Cliente cliente;
     protected int agencia = AGENCIA_PADRAO;
     protected int numeroConta = NUMERO_CONTADOR++;
     protected double saldo = 0d;
-    protected Cliente cliente;
-    List<Conta> contasList;
 
+    //Construtor desta classe e também referencia a classe Cliente
     public Conta(Cliente cliente) {
         this.agencia = agencia;
         this.numeroConta = numeroConta;
         this.cliente = cliente;
+    }
 
-    }
-    public Conta(){
-        this.clienteList = new ArrayList<>();
-    }
+    //Construtor do ArrayList
+    public Conta(){ this.clienteList = new ArrayList<>(); }
 
     public void adicionarCliente(Cliente nomeCliente){
         Cliente clientes = new Cliente(String.valueOf(nomeCliente));
