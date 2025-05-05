@@ -1,4 +1,4 @@
-package org.designPattern.Strategy;
+package org.designPattern;
 
 public class Contexto {
     private Strategy strategy;
