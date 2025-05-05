@@ -1,4 +1,4 @@
-import org.designPattern.Strategy;
+package org.designPattern.Strategy;
 
 public class Contexto {
     private Strategy strategy;
