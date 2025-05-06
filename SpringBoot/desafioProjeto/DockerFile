@@ -17,4 +17,4 @@ COPY --from=build /app /app
 
 EXPOSE 8080
 
-CMD ["./mvnw", "spring-boot:run"]
+CMD ["sh", "-c", "echo \"Active Profile: $SPRING_PROFILES_ACTIVE\" && ./mvnw spring-boot:run"]
