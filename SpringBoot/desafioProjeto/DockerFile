@@ -5,10 +5,7 @@ WORKDIR /app
 
 COPY . /app
 
-RUN echo "--- Verificando versões ---" && java -version && mvn --version
-RUN echo "--- Verificando variáveis de ambiente ---" && env
-RUN echo "--- Verificando compilador Java ---" && javac -version
-RUN echo "--- Executando build com stack trace completo ---" && chmod +x ./mvnw && ./mvnw -e clean install -DskipTests
+RUN chmod +x ./mvnw && ./mvnw clean dependency:list install
 
 # Etapa final: executa a aplicação
 FROM openjdk:21-jdk
