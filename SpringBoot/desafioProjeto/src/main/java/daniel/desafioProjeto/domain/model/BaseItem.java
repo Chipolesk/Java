@@ -1,5 +1,6 @@
 package daniel.desafioProjeto.domain.model;
 
+import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
@@ -10,10 +11,13 @@ public abstract class BaseItem {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Schema(description = "ID único da feature/news", example = "1")
     private Long id;
 
+    @Schema(description = "icone da feature/news", example = "url")
     private String icon;
 
+    @Schema(description = "descrição da feature/news", example = "itau - feito para você | PIX | CARTÕES")
     private String description;
 
     public Long getId() {
