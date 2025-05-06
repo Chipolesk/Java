@@ -1,0 +1,18 @@
+spring:
+  config:
+    activate:
+      on-profile: prod
+  datasource:
+    url: jdbc:postgresql://${spring.datasource.host}:${spring.datasource.port}/${PGDATABASE}
+    driver-class-name: org.postgresql.Driver
+    username: ${PGUSER}
+    password: ${PGPASSWORD}
+    host: hopper.proxy.rlwy.net
+    port: 46418 # Usando a porta da variável de ambiente PGPORT
+    database: ${PGDATABASE}
+
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: validate # Ou sua preferência
+    show-sql: false # Ou sua preferência
