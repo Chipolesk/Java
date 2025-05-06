@@ -5,7 +5,8 @@ WORKDIR /app
 
 COPY . /app
 
-RUN chmod +x ./mvnw && ./mvnw clean install -DskipTests
+RUN chmod +x ./mvnw && ./mvnw clean generate-sources
+RUN chmod +x ./mvnw && ./mvnw install -DskipTests
 
 # Etapa final: executa a aplicação
 FROM openjdk:17-jdk
