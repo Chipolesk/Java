@@ -1,14 +1,14 @@
-# Etapa de build com OpenJDK 21 e Maven
-FROM openjdk:21-jdk AS build
+# Etapa de build com OpenJDK 17 e Maven
+FROM openjdk:17-jdk AS build
 
 WORKDIR /app
 
 COPY . /app
 
-RUN chmod +x ./mvnw && ./mvnw clean dependency:list install
+RUN chmod +x ./mvnw && ./mvnw clean install -DskipTests
 
 # Etapa final: executa a aplicação
-FROM openjdk:21-jdk
+FROM openjdk:17-jdk
 
 WORKDIR /app
 
