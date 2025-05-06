@@ -1,5 +1,5 @@
-# Etapa de build com Java 21 e Maven
-FROM eclipse-temurin:21-jdk AS build
+# Etapa de build com OpenJDK 21 e Maven
+FROM openjdk:21-jdk AS build
 
 WORKDIR /app
 
@@ -9,7 +9,7 @@ RUN chmod +x ./mvnw \
     && ./mvnw clean install -DskipTests
 
 # Etapa final: executa a aplicação
-FROM eclipse-temurin:21-jdk
+FROM openjdk:21-jdk
 
 WORKDIR /app
 
